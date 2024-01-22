@@ -9,12 +9,9 @@ int main(void)
 {
     int n;
 
-    /* Assign a random number (limited range for simplicity) */
-    n = 42;  /* Replace 42 with your desired random number approach */
+    n = -520693284;
+    printf("%d ", n);
 
-    printf("Number: %d\n", n);
-
-    /* Check whether the number is positive, negative, or zero */
     if (n > 0)
         printf("is positive\n");
     else if (n == 0)
