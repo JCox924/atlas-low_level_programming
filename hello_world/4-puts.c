@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - puts
+ *
+ * Return: Always 0
+ *
+ */
 int main(void)
 
 {
