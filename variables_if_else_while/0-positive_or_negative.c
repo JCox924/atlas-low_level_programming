@@ -9,7 +9,9 @@ int main(void)
 {
     int n;
 
-    n = -520693284;
+    /* Use system time as a seed for pseudo-random number generation */
+    n = (int)time(NULL);
+
     printf("%d ", n);
 
     if (n > 0)
