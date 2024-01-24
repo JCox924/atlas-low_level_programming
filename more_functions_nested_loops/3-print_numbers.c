@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *print_numbers- Prints numbers 0-9
+ *print_numbers- Prints numbers 0-9 using a while loop
  *
  *
- *
+ *@i: Iterator variable to store the character
  *
  *
  *
@@ -18,5 +18,5 @@ void print_numbers(void)
 	{
 		_putchar(i);
 	}
-	i++
+	i++;
 }
