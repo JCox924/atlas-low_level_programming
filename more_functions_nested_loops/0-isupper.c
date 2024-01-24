@@ -3,6 +3,8 @@
 /**
  *_isupper- Checks for upper case letters @c
  *
+ *@c: Character variable
+ *
  *Return: returns 1 is c is uppercase, 0 otherwise
  */
 
