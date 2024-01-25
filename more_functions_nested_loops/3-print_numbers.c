@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*print_numbers-Prints numbers 0-9 using a for loop 
+*print_numbers- Prints numbers 0-9 using a for loop
 *
 *
 */
