@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,11 +8,6 @@
 *
 */
 
-int main(void)
-{
-	more_numbers();
-	return 0;
-}	
 
 void more_numbers(void)
 {
@@ -25,9 +21,9 @@ void more_numbers(void)
 		{
 			if (digit > 9)
 			{
-				_putchar(digit / 10 + '0');
+				_putchar((digit / 10) + '0');
 			}
-			_putchar(digit % 10 + '0');
+			_putchar((digit % 10) + '0');
 		}
 	_putchar('\n');
 	}
