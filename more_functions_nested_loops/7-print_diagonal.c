@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * print_diagonal- Draws a diagonal lines given and certian number of empty spaces
+  * print_diagonal- Draws diagonal lines given certian number of empty spaces
   * @n: The number of times to print diagonal lines
   *
   * Return: void
@@ -17,6 +17,7 @@ void print_diagonal(int n)
 	else
 	{
 		for (i = 0; i < n; i++)
+
 		{
 			int j;
 			for (j = 0; j < i; j++)
