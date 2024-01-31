@@ -3,8 +3,7 @@
 
 
 /**
- *
- * print_square - prints a square of #'s
+ * print_square- prints a square of #'s
  *
  * @size: size of square
  *
