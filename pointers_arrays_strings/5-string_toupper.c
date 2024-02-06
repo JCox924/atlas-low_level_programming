@@ -3,6 +3,8 @@
 /**
  * string_toupper - changes all char's in a string to uppercase
  *
+ *@str: pointer to string
+ *
  * Return: new uppercase string
  */
 
@@ -17,7 +19,7 @@ char *string_toupper(char *str)
 			str[i] -= 32;
 		}
 	}
-	
+
 	return (str);
 }
 
