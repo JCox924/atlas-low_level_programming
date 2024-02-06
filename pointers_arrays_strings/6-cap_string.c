@@ -8,7 +8,7 @@
  * Return: capitalized string
  */
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int i = 0;
 
@@ -36,7 +36,7 @@ char *cap_string(char *)
 			case '}':
 				if (str[i + 1] >= 'a' && s[i + 1] <= 'z')
 				{
-					s[i + 1} -= 32;
+					s[i + 1] -= 32;
 				}
 		}
 	}
