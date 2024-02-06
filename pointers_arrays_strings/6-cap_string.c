@@ -17,7 +17,7 @@ char *cap_string(char *str)
 		str[i] -= 32;
 	}
 
-	for (i + 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		switch(str[i])
 		{
