@@ -26,7 +26,6 @@ char *cap_string(char *str)
 			case '\n':
 			case ',':
 			case ';':
-			case ',':
 			case '!':
 			case '?':
 			case '"':
@@ -34,9 +33,9 @@ char *cap_string(char *str)
 			case ')':
 			case '{':
 			case '}':
-				if (str[i + 1] >= 'a' && s[i + 1] <= 'z')
+				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 				{
-					s[i + 1] -= 32;
+					str[i + 1] -= 32;
 				}
 		}
 	}
