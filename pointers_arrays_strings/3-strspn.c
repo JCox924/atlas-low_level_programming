@@ -3,14 +3,13 @@
 
 
 /**
+ *_strspn - length of prefix
  *
- * _strspn - length of prefix
+ *@s: pointer to string
  *
- * @s: pointer to string
+ *@accept: temp string to write to
  *
- * @accept: temp string to write to
- *
- * Return: new string
+ *Return: new string
  */
 
 unsigned int _strspn(char *s, char *accept)
