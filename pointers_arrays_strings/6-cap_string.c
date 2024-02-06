@@ -26,6 +26,7 @@ char *cap_string(char *str)
 			case '\n':
 			case ',':
 			case ';':
+			case '.':
 			case '!':
 			case '?':
 			case '"':
