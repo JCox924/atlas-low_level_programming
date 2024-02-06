@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio.h"
 
 /**
  * print_diagsums - prints sum of two numbers on an array
