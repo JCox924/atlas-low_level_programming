@@ -11,7 +11,7 @@
  * Return: s if character is found and void if not
  */
 
-char *_strpbrk(char *s , char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	while (*s)
 	{
