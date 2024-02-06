@@ -13,7 +13,7 @@
  * Return: concatenated strings
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
         int i, d_len, s_len;
 
