@@ -8,7 +8,7 @@
  *
  * @s: pointer to string
  *
- * @accept: temp string to write to 
+ * @accept: temp string to write to
  *
  * Return: new string
  */
