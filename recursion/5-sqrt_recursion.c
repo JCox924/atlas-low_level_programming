@@ -1,50 +1,40 @@
 #include "main.h"
 
 /**
- *_sprt_recursion - returns the square root of a number
+ * _sqrt_recursion - Returns the natural square root of a number.
+ * @n: The number to find the square root of.
  *
- * @n:  radicand
- *
- * @p: partition
- *
- * Return: result
+ * Return: The natural square root of n, or -1 if n does not have a
+ *         natural square root.
  */
-
 int _sqrt_recursion(int n)
 {
-	int p;
+    if (n < 0)
+    { 
+        return -1;
+    }
 
-	int f = 0;
+    return find_sqrt(n, 0);
+}
 
-	int c = n;
+/**
+ * find_sqrt - Helper function to recursively find the square root.
+ * @n: The number to find the square root of.
+ * @i: The current value to check as a possible square root.
+ *
+ * Return: The natural square root of n, or -1 if not found.
+ */
 
-	if (n < 2)
-	{
-		return (n);
-	}
+int find_sqrt(int n, int i)
+{
+    if (i * i == n)
+    {
+        return (i);
+    }
+    else if (i * i > n)
+    {
+        return (-1);
+    }
 
-
-
-	while ( c >= f)
-	{
-		p = (f + c) / 2;
-
-		if (p * p == n)
-		{
-			return (p);
-		}
-
-		else if (p * p < n)
-		{
-			f = p + 1;
-		}
-
-		else
-		{
-			c = p - 1;
-		}
-	}
-
-	return (-1);
-
+    return (find_sqrt(n, i + 1));
 }
