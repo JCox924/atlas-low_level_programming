@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
 		return (n);
 	}
 
-	if (p * p < n)
+	if (p * p == n)
 	{
 		return (p);
 	}
