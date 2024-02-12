@@ -19,18 +19,30 @@ int _sqrt_recursion(int n)
 		return (n);
 	}
 
-	p = (n / 2) + (n % 2);
+	int f = 0;
 
-	if (p * p == n)
+	int c = n;
+
+	while ( c >= f)
 	{
-		return (p);
+		p = (f + c) / 2;
+
+		if (p * p == n)
+		{
+			return (p);
+		}
+
+		else if (p * p < n)
+		{
+			f = p + 1;
+		}
+
+		else
+		{
+			c = p - 1;
+		}
 	}
-	else if (p * p < n)
-	{
-		return (_sqrt_recursion(n + p * p));
-	}
-	else
-	{
-		return (_sqrt_recursion(p - 1));
-	}
+
+	return (-1);
+
 }
