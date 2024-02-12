@@ -8,7 +8,7 @@
  * Return: n!
  */
 
-itn factorial(int n)
+int factorial(int n)
 {
 	if (n < 0)
 	{
