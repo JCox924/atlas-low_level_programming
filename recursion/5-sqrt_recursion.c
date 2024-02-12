@@ -14,14 +14,16 @@ int _sqrt_recursion(int n)
 {
 	int p;
 
+	int f = 0;
+
+	int c = n;
+
 	if (n < 2)
 	{
 		return (n);
 	}
 
-	int f = 0;
 
-	int c = n;
 
 	while ( c >= f)
 	{
