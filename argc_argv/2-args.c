@@ -6,7 +6,7 @@
  *
  * @argc: argument counter
  *
- * argv: argument string pointer
+ * @argv: argument string pointer
  *
  * Return: Always 0
  */
