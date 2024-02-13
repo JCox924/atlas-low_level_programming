@@ -3,7 +3,7 @@
 
 /**
  * main - prints name of program
- * 
+ *
  * @argc: argument count
  *
  * @argv: argument vector, string format
@@ -15,11 +15,11 @@ int main(int argc, char *argv[])
 {
 	if (argc > 0)
 	{
-		printf("%s\n" , argv[0]);
+		printf("%s\n", argv[0]);
 	}
 	else
 	{
-		fprintf (stderr, "no name found\n");
+		fprintf(stderr, "no name found\n");
 		return (1);
 	}
 
