@@ -6,10 +6,12 @@
  *
  * @argc: argument counter
  *
+ * @argv: unused
+ *
  * Return: always 0
  */
 
-int main(int argc)
+int main(int argc, int **argv __atribute__((unused)))
 {
 	printf("%d\n" , argc - 1);
 
