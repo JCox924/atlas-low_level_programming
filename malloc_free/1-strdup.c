@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include "mylib.a"
 
 /**
  * _strdup - Returns a pointer to a copied striung in memory
