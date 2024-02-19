@@ -36,9 +36,9 @@ unsigned int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len1, len2;
+	unsigned int len1, len2;
 	
-	int i, j;
+	unsigned int i, j;
 
 	char *result;
 
