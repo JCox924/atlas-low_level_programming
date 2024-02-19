@@ -11,7 +11,7 @@
  *  Return: array of ints
  */
 
-int *_array_range(int min, int max)
+int *array_range(int min, int max)
 {
 	size_t size;
 
