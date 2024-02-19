@@ -3,7 +3,7 @@
 
 
 /*
- * _strlen - length of string(static lib fix)
+ * _strlen - length of string
  *
  * @s: pointer to string
  *
