@@ -10,7 +10,7 @@
  * Return: length of string
  */
 
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
 	char *i = s;
 
