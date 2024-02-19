@@ -33,7 +33,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	for (; i < size_all; i++)
 	{
-		*((char *)p + 1) = 0;
+		*((char *)p + i) = 0;
 	}
 
 	return (p);
