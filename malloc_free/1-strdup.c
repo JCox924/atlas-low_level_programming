@@ -1,6 +1,25 @@
 #include "main.h"
 #include <stdlib.h>
-#include "mylib.a"
+
+
+/*
+ * _strlen - returns length of string(static lib fix)
+ *
+ * @s: pointer to string
+ *
+ * Reutrn: length of string
+ */
+
+int _strlen(char *s)
+{
+	char *i = s;
+
+	while (*s != '\0')
+	{
+		++s;
+	}
+	return (s - i);
+}
 
 /**
  * _strdup - Returns a pointer to a copied striung in memory
