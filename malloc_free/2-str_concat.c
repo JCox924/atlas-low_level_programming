@@ -34,6 +34,9 @@ int _strlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 
+
+	char *result;
+
 	size_t len_s1 = _strlen(s1);
 
         size_t len_s2 = _strlen(s2);
@@ -51,7 +54,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 
-	char *result = (char *)malloc(len_s1 + len_s2 + 1);
+	result = (char *)malloc(len_s1 + len_s2 + 1);
 
 	if (result == NULL)
 	{
