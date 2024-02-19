@@ -17,13 +17,15 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	size_t size_all;
 
+	void *p;
+
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 	size_all = nmemb * size;
 
-	void *p = malloc(size_all);
+	p = malloc(size_all);
 
 	if (p == NULL)
 	{

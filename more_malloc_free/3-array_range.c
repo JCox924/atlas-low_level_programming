@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *_array_range  - create array of ints
+ *array_range  - create array of ints
  *
  *  @min: min num in array
  *
