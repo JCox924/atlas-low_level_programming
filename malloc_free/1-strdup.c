@@ -3,7 +3,7 @@
 
 
 /*
- * _strlen - Returns length of string(static lib fix)
+ * _strlen - length of string(static lib fix)
  *
  * @s: pointer to string
  *
@@ -23,6 +23,8 @@ int _strlen(char *s)
 
 /**
  * _strdup - Returns a pointer to a copied striung in memory
+ *
+ *_strlen - Returns length of string
  *
  * @str: pointer to string
  *
