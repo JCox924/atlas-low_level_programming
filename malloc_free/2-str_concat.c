@@ -43,6 +43,8 @@ char *str_concat(char *s1, char *s2)
 
 	size_t i = 0;
 
+	size_t j = 0;
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -63,8 +65,12 @@ char *str_concat(char *s1, char *s2)
 
 	for (; i < len_s1; i++)
 	{
-		result[len_s1 +i] = s2[i];
+		result[i] = s1[i];
 	}
+
+	for (; j < len_s2; j++)
+	{
+		result[len_s1 + j] = s2[j];
 
 	result[len_s1 + len_s2] = '\0';
 
