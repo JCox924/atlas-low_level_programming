@@ -3,11 +3,11 @@
 
 
 /*
- * _strlen - returns length of string(static lib fix)
+ * _strlen - Returns length of string(static lib fix)
  *
  * @s: pointer to string
  *
- * Reutrn: length of string
+ * Return: length of string
  */
 
 int _strlen(char *s)
