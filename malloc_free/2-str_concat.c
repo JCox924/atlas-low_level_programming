@@ -21,7 +21,6 @@ int _strlen(char *s)
 }
 
 /**
- *
  * str_concat - Concatenates 2 strings
  *
  * @s1: string 1
