@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 
 	size_t len_s1 = (s1 == NULL) ? 0 : _strlen(s1);
 
-        size_t len_s2 = (s2 == NULL) ? 0 : _strlen(s2);
+	size_t len_s2 = (s2 == NULL) ? 0 : _strlen(s2);
 
 	size_t i, j;
 
