@@ -3,7 +3,7 @@
 
 
 /*
- * _strlen - Returns the length of string
+ *_strlen - Returns the length of string
  *
  * Description: sub for static libary, return length of string for function
  *
