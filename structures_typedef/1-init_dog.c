@@ -1,66 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 
-/*
- *_strlen - Returns the length of string
- *
- * Description: sub for static libary, return length of string for function
- *
- * @s: pointer to string
- *
- * Return: length of string
- */
-
-int _strlen(char *s)
-{
-	char *i = s;
-
-	while (*s != '\0')
-	{
-		++s;
-	}
-	return (s - i);
-}
-
-/**
- * _strdup - Returns a pointer to a copied striung in memory
- *
- *_strlen - Returns length of string
- *
- * @str: pointer to string
- *
- * Return: NULL if void, pointer to new string if not
- */
-
-char *_strdup(char *str)
-{
-	char *new_str;
-
-	int i = 0;
-
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-
-	new_str = malloc(sizeof(char) * (_strlen(str) + 1));
-
-	if (new_str == NULL)
-	{
-		return (NULL);
-	}
-
-	for (; str[i] != '\0'; i++)
-	{
-		new_str[i] = str[i];
-	}
-
-	new_str[i] = '\0';
-
-
-	return (new_str);
-
-}
 /**
  * init_dog - creates a stucture variable named dog
  *
@@ -79,8 +20,20 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
 	{
-		d->name = _strdup(name);
+		d->name = strdup(name);
 		d->age = age;
-		d->owner = _strdup(owner);
+		d->owner = strdup(owner);
 	}
+
+
+}
+
+
+int main(void)
+{
+	struct dog my_dog;
+
+    init_dog(&my_dog, "Poppy", 3.5, "Bob");
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+    return (0);
 }
