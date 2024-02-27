@@ -39,6 +39,7 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 		i++;
 	}
+	dest[i] = '\0';
 
 	return (dest);
 }
@@ -57,47 +58,42 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *pound;
+    if (name == NULL || owner == NULL)
+    {
+        return (NULL);
+    }
 
-	int nlen = 0, olen = 0;
-	
-	if (name != NULL && owner != NULL)
-	{
-		nlen = _strlen(name);
+    dog_t *pound = malloc(sizeof(dog_t));
+    if (pound == NULL)
+    {
+        return (NULL);
+    }
 
-		olen = _strlen(owner);
+    int nlen = _strlen(name);
+    int olen = _strlen(owner);
 
-		pound = malloc(sizeof(dog_t));
+    pound->name = malloc(sizeof(char) * (nlen + 1));
+    if (pound->name == NULL)
+    {
+        free(pound);
+        return (NULL);
+    }
 
-		if (pound == NULL)
-		{
-			return (NULL);
-		}
+    pound->owner = malloc(sizeof(char) * (olen + 1));
+    if (pound->owner == NULL)
+    {
+        free(pound->name);
+        free(pound);
+        return (NULL);
+    }
 
-		pound->name = malloc((sizeof(char)) * (nlen) + 1);
+    _strcpy(pound->name, name);
+    pound->name[nlen] = '\0';
 
-		pound->owner = malloc((sizeof(char)) * (olen) + 1);
+    _strcpy(pound->owner, owner);
+    pound->owner[olen] = '\0';
 
-		pound->name = _strcpy(pound->name, name);
+    pound->age = age;
 
-		pound->age = age;
-
-		pound->owner = _strcpy(pound->owner, owner);
-
-		if (pound->name == NULL)
-		{
-			free(pound);
-			return (NULL);
-		}
-		if (pound->owner == NULL)
-		{
-			free(pound);
-			return (NULL);
-		}
-	}
-	
-	return (pound);
-}	
-		
-
-			
+    return pound;
+}
