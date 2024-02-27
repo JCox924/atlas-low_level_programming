@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	pOp = get_op_func(argv(2));
+	pOp = get_op_func(argv[2]);
 
 	if (!pOp)
 	{
