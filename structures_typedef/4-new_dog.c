@@ -58,19 +58,19 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
+
+    dog_t *pound = malloc(sizeof(dog_t));
+    int nlen = _strlen(name);
+    int olen = _strlen(owner);
+
     if (name == NULL || owner == NULL)
     {
         return (NULL);
     }
-
-    dog_t *pound = malloc(sizeof(dog_t));
     if (pound == NULL)
     {
         return (NULL);
     }
-
-    int nlen = _strlen(name);
-    int olen = _strlen(owner);
 
     pound->name = malloc(sizeof(char) * (nlen + 1));
     if (pound->name == NULL)
