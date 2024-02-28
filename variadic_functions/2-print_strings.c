@@ -30,7 +30,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 			if (str == NULL)
 			{
-				printf("%s"), "(nil)");
+				printf("(nil)");
 			}
 			else
 				printf("%s", str);
