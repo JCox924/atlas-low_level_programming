@@ -9,7 +9,7 @@
  * @separator: The string to be printed between numbers
  *
  * @n: The number of integers passed to the function
- * 
+ *
  * Return: void
  */
 
@@ -26,7 +26,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (i < n - 1 && separator != NULL)
 		{
 			printf("%s", separator);
-        	}
+		}
 	}
 
 	va_end(args);

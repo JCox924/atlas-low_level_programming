@@ -4,7 +4,7 @@
 /**
  * sum_them_all - sums all numbers in arguments
  *
- * @n integers
+ * @n: integers
  *
  * Return: sum of all
  */

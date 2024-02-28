@@ -5,7 +5,7 @@
 
 
 /**
- * print_strings - prints strings 
+ * print_strings - prints strings
  *
  * @separator: basically a space
  *
