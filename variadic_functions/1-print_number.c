@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <stdargs.h>
+#include <stdlib.h>
 
 /**
  * print_numbers - 
