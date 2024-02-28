@@ -5,11 +5,11 @@
 
 
 /**
- * print_strings - 
+ * print_strings - prints strings 
  *
- * @separator:
+ * @separator: basically a space
  *
- * @n:
+ * @n: integer
  *
  * Return: void
  */
