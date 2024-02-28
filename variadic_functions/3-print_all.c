@@ -16,10 +16,10 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	f_dt form_types[] = {
-		{ "c", print_a_char },
-		{ "i", print_a_integer },
-		{ "f", print_a_float },
-		{ "s", print_a_char_ptr }
+		{ "c", print_char },
+		{ "i", print_integer },
+		{ "f", print_float },
+		{ "s", print_char_ptr }
 	};
 
 	unsigned int i = 0;
