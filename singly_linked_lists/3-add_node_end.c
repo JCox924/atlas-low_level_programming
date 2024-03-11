@@ -12,7 +12,7 @@
 
 int _strlen(const char *s)
 {
-	char *i = s;
+	const char *i = s;
 
 	while (*s != '\0')
 	{
