@@ -12,10 +12,10 @@
 *Return: address of new node, NULL if error
 */
 
-listint_t *insert_ndoeint_at_index(listint_t **head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new_node;
-	listint_T *tmp = *head;
+	listint_t *tmp = *head;
 	unsigned int i = 0;
 
 	new_node = (listint_t *)malloc(sizeof(listint_t));

@@ -10,7 +10,7 @@
 *Return: node specified, NULL if not found
 */
 
-listint_t *get_nodeint_at_index(list_t *head, unsigned int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int count = 0;
 
