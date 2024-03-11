@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
 *pop_listint - deletes head node, returns head's data

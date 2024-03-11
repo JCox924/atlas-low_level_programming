@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
 *sum_listint - sums elements in a list
