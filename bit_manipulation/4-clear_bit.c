@@ -12,11 +12,13 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
+	unsigned long int submask;
+
 	if (index > (sizeof(unsigned long int) * 8 - 1))
 	{
 		return (-1);
 	}
-	unsigned long int submask = 1UL << index;
+	submask = 1UL << index;
 	*n = *n & ~submask;
 
 	return (1);
