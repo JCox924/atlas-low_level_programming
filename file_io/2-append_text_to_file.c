@@ -3,7 +3,7 @@
 /**
 *append_text_to_file - appends text to a file
 *
-*@filename - name of file
+*@filename: name of file
 *
 *@text_content: string to append
 *
