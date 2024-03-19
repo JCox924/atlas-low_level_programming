@@ -8,7 +8,7 @@
 *Return address of hash table
 */
 
-hash_tabel_t *hash_table_create(unsigned long int size)
+hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *hash_table;
 	unsigned long int i;
